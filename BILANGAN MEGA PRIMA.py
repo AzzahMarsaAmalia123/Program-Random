@@ -40,7 +40,7 @@ while True:
         except ValueError:
             print("Input tidak valid. Harap masukkan bilangan bulat.")
     print()
-    if kiri<kanan :
+    if kiri<kanan and kiri>0 and kanan>0 :
         for i in range (kiri,kanan+1):
             if bilprima(i):
                listprima.append(i)
@@ -58,4 +58,3 @@ while True:
     if ulang == 'T' :
         print("Terima kasih telah menggunakan program ini!")
         break
-
