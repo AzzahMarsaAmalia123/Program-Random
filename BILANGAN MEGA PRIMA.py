@@ -27,13 +27,18 @@ def bilmegaprima(n):
         return False
     
 
-print("PROGRAM BILANGAN MEGAPRIMA\n")
+print("PROGRAM BILANGAN MEGAPRIMA\nSilakan input bilangan bulat positif!")
 while True:
     listprima=[]
     listmegaprima=[]
     jbmp=0
-    kiri=int(input("Input Bilangan Kiri = "))
-    kanan=int(input("Input Bilangan Kanan = "))
+    while True:
+        try:
+            kiri=int(input("\nInput Bilangan Kiri = "))
+            kanan=int(input("Input Bilangan Kanan = "))
+            break
+        except ValueError:
+            print("Input tidak valid. Harap masukkan bilangan bulat.")
     print()
     if kiri<kanan :
         for i in range (kiri,kanan+1):
@@ -48,7 +53,7 @@ while True:
     else :
         print("Input bilangan bulat dimana bilangan kiri lebih kecil dari bilangan kanan!")
     print()
-    ulang=input("Apakah anda ingi nmengulang program ini? (Y/T) = ").strip().upper()
+    ulang=input("Apakah anda ingin mengulang program ini? (Y/T) = ").strip().upper()
     if ulang == 'T' :
         print("Terima kasih telah menggunakan program ini!")
         break
