@@ -26,9 +26,8 @@ def bilmegaprima(n):
         print(f"{n} bukan bilangan megaprima karena {str(tp).replace('[','').replace(']','')} bukan bilangan prima")
         return False
     
-
-print("PROGRAM BILANGAN MEGAPRIMA\nSilakan input bilangan bulat positif!")
 while True:
+    print("PROGRAM BILANGAN MEGAPRIMA\nSilakan input bilangan bulat positif!")
     listprima=[]
     listmegaprima=[]
     jbmp=0
@@ -53,8 +52,13 @@ while True:
     else :
         print("Input bilangan bulat dimana bilangan kiri lebih kecil dari bilangan kanan!")
     print()
-    ulang=input("Apakah anda ingin mengulang program ini? (Y/T) = ").strip().upper()
-    os.system('cls')
-    if ulang == 'T' :
-        print("Terima kasih telah menggunakan program ini!")
-        break
+    while True:
+        ulang=input("Apakah anda ingin mengulang program ini? (Y/T) = ").strip().upper()
+        os.system('cls')
+        if ulang=='Y':
+            break
+        elif ulang=='T' :
+            print("Terima kasih telah menggunakan program ini!")
+            exit()
+        else:
+            print("Harap input Y untuk Ya dan T untuk Tidak!")
