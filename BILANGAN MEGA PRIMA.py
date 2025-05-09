@@ -54,6 +54,7 @@ while True:
         print("Input bilangan bulat dimana bilangan kiri lebih kecil dari bilangan kanan!")
     print()
     ulang=input("Apakah anda ingin mengulang program ini? (Y/T) = ").strip().upper()
+    os.system('cls')
     if ulang == 'T' :
         print("Terima kasih telah menggunakan program ini!")
         break
