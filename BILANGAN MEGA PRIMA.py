@@ -25,9 +25,8 @@ def bilmegaprima(n):
     else:
         print(f"{n} bukan bilangan megaprima karena {str(tp).replace('[','').replace(']','')} bukan bilangan prima")
         return False
-    
+print("PROGRAM BILANGAN MEGAPRIMA\nSilakan input bilangan bulat positif!")
 while True:
-    print("PROGRAM BILANGAN MEGAPRIMA\nSilakan input bilangan bulat positif!")
     listprima=[]
     listmegaprima=[]
     jbmp=0
